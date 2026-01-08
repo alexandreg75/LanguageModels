@@ -1,0 +1,98 @@
+SEED (base): 42
+PROMPT: 'The future of artificial intelligence is'
+MAX_LEN: 50
+
+================================================================================
+5.b — Greedy decoding (3 runs)
+================================================================================
+[Run 1]
+The future of artificial intelligence is uncertain.
+
+"We're not sure what the future will look like," said Dr. Michael S. Schoenfeld, a professor of computer science at the University of California, Berkeley. "But we're not
+----------------------------------------
+[Run 2]
+The future of artificial intelligence is uncertain.
+
+"We're not sure what the future will look like," said Dr. Michael S. Schoenfeld, a professor of computer science at the University of California, Berkeley. "But we're not
+----------------------------------------
+[Run 3]
+The future of artificial intelligence is uncertain.
+
+"We're not sure what the future will look like," said Dr. Michael S. Schoenfeld, a professor of computer science at the University of California, Berkeley. "But we're not
+----------------------------------------
+
+================================================================================
+5.c — Sampling (temp=0.7, top_k=50, top_p=0.95) — 5 seeds
+================================================================================
+SEED 1
+The future of artificial intelligence is up in the air, and the future of artificial intelligence is now about to change. For now, we're just waiting for the technology to be perfected so that we can take it to the next level.
+
+The
+----------------------------------------
+SEED 2
+The future of artificial intelligence is not clear, but that could change. The early progress of AI has been largely due to the ability to do some things fairly quickly, like calculate things, but the future is not clear. The early progress of AI has
+----------------------------------------
+SEED 3
+The future of artificial intelligence is bright and bright. The future of the Internet of Things, and the future of the future of the Internet of Things industry.
+
+The future of the Internet of Things, and the future of the Internet of Things industry
+----------------------------------------
+SEED 4
+The future of artificial intelligence is very, very bright. The future of artificial intelligence is very, very bright.
+
+
+So, you know, I have a question for you.
+
+
+MR. JOHNSON: And what about human-
+----------------------------------------
+SEED 5
+The future of artificial intelligence is uncertain. Although it has the potential to revolutionize the way we think, it may not be for good.
+
+Advertisement
+
+So what happens when artificial intelligence goes too far, and we get a good deal of
+----------------------------------------
+
+================================================================================
+5.d — Repetition penalty comparison (same seed)
+================================================================================
+Seed: 7
+[No repetition_penalty]
+The future of artificial intelligence is still a long way off, and AI will be used more and more. It's still a little bit early to tell whether or not this will be the case. But if the future of artificial intelligence is a long way
+----------------------------------------
+[With repetition_penalty=2.0]
+The future of artificial intelligence is still a long way off, and AI will be used more than ever to solve many important problems.
+
+
+================================================================================
+5.e — Temperature extremes (same seed)
+================================================================================
+Seed: 9
+[temperature=0.1]
+The future of artificial intelligence is uncertain.
+
+"We're not sure what the future will be," said David B. Smith, a professor of computer science at the University of California, Berkeley. "We're not sure what the future will be
+----------------------------------------
+[temperature=2.0]
+The future of artificial intelligence is set to explode due both to social tensions over a rapidly emerging technology with limited range and potential for widespread disruption to current practices for large business and to the rule of law
+
+Why do researchers expect robots?
+
+Human
+
+================================================================================
+5.f — Beam search (num_beams=5)
+================================================================================
+The future of artificial intelligence is in the hands of the next generation of scientists and engineers.
+
+The future of artificial intelligence is in the hands of the next generation of scientists and engineers.
+
+The future of artificial intelligence is in the hands of
+
+================================================================================
+5.g — Beam search timing (approx)
+================================================================================
+num_beams=5 -> 1.227s
+num_beams=10 -> 1.610s
+num_beams=20 -> 2.271s

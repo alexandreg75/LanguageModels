@@ -1,0 +1,65 @@
+================================================================================
+Phrase 1
+================================================================================
+Texte: 'Artificial intelligence is metamorphosing the world!'
+
+Tokens:
+['Art', 'ificial', 'Ġintelligence', 'Ġis', 'Ġmet', 'amorph', 'osing', 'Ġthe', 'Ġworld', '!']
+
+Token IDs: [8001, 9542, 4430, 318, 1138, 37670, 2752, 262, 995, 0]
+
+Détails par token (id -> decode([id])):
+8001	'Art'
+9542	'ificial'
+4430	' intelligence'
+318	' is'
+1138	' met'
+37670	'amorph'
+2752	'osing'
+262	' the'
+995	' world'
+0	'!'
+
+Reconstruction (decode(ids)): 'Artificial intelligence is metamorphosing the world!'
+
+================================================================================
+Phrase 2
+================================================================================
+Texte: 'GPT models use BPE tokenization to process unusual words like antidisestablishmentarianism.'
+
+Tokens:
+['G', 'PT', 'Ġmodels', 'Ġuse', 'ĠB', 'PE', 'Ġtoken', 'ization', 'Ġto', 'Ġprocess', 'Ġunusual', 'Ġwords', 'Ġlike', 'Ġant', 'idis', 'establishment', 'arian', 'ism', '.']
+
+Token IDs: [38, 11571, 4981, 779, 347, 11401, 11241, 1634, 284, 1429, 8468, 2456, 588, 1885, 29207, 44390, 3699, 1042, 13]
+
+Détails par token (id -> decode([id])):
+38	'G'
+11571	'PT'
+4981	' models'
+779	' use'
+347	' B'
+11401	'PE'
+11241	' token'
+1634	'ization'
+284	' to'
+1429	' process'
+8468	' unusual'
+2456	' words'
+588	' like'
+1885	' ant'
+29207	'idis'
+44390	'establishment'
+3699	'arian'
+1042	'ism'
+13	'.'
+
+Reconstruction (decode(ids)): 'GPT models use BPE tokenization to process unusual words like antidisestablishmentarianism.'
+
+================================================================================
+Analyse du mot long
+================================================================================
+Mot: antidisestablishmentarianism
+Sous-tokens: ['ant', 'idis', 'establishment', 'arian', 'ism']
+Nombre de sous-tokens: 5
+IDs: [415, 29207, 44390, 3699, 1042]
+Reconstruction: 'antidisestablishmentarianism'

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environnements
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / outputs
+*.log
+
+# Caches ML
+.cache/
+wandb/
+runs/
+
+# Fichiers lourds non nécessaires
+*.pt
+*.pth
+*.ckpt
+*.bin
