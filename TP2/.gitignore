@@ -1,0 +1,34 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments (even if not used)
+venv/
+.env/
+.venv/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.bin
+*.ckpt
+gpt2_weights/
+
+# Large data files
+*.zip
+*.csv
+
+# Pyenv
+.python-version
+
+# Misc
+.cache/
