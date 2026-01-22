@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q1",
+    "question": "Quels sont les sujets de PFE supplémentaires proposés par Luca Benedetto ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q2",
+    "question": "Comment valider une UE ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q3",
+    "question": "Comment se calcule la note finale d’une UE ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q4",
+    "question": "Quels documents ou informations figurent en en-tête des emails exportés (From/Date/Message-ID) ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q5",
+    "question": "Quelles sont les modalités de validation d’une ECUE ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q6",
+    "question": "Qui a envoyé l’email concernant des sujets de PFE additionnels ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q7",
+    "question": "Dans le règlement, que permet l’obtention/validation d’une UE (ex: crédits ECTS) ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q8",
+    "question": "Quel est l’objet (subject) d’un email lié aux sujets de PFE additionnels ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q9",
+    "question": "Quelles sont les règles de validation d’un examen externe de langue anglaise ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q10",
+    "question": "Quels sont les rôles ou missions mentionnés dans le règlement intérieur (vie étudiante / représentation) ?",
+    "expected_doc_type": "admin_pdf"
+  },
+  {
+    "id": "q11",
+    "question": "Quel est le lien visio mentionné dans l’email 'Re: lien visio' ?",
+    "expected_doc_type": "email"
+  },
+  {
+    "id": "q12",
+    "question": "Quelle est la procédure exacte pour demander une équivalence de validation (contrat de formation, etc.) ?",
+    "expected_doc_type": "admin_pdf"
+  }
+]
