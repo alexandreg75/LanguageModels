@@ -1,31 +1,43 @@
-# Python
+# =========================
+# Python / cache
+# =========================
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-
-# Notebooks
 .ipynb_checkpoints/
+*.log
 
+# =========================
 # Environnements
+# =========================
 .venv/
 venv/
 env/
+.conda/
+*.egg-info/
 
-# OS
+# =========================
+# OS / Editors
+# =========================
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# Logs / outputs
-*.log
+# =========================
+# TP4 - données sensibles / lourdes (NE PAS PUSH)
+# =========================
+TP4/data/admin_pdfs/
+TP4/data/emails/
+TP4/data/cache/
+TP4/chroma_db/
+TP4/chroma_index/
+TP4/*.sqlite
+TP4/**/*.sqlite
 
-# Caches ML
-.cache/
-wandb/
-runs/
-
-# Fichiers lourds non nécessaires
-*.pt
-*.pth
-*.ckpt
-*.bin
+# =========================
+# Modèles / caches LLM (si jamais tu les mets dans le repo)
+# =========================
+gpt2_weights/
+models/
