@@ -1,0 +1,6 @@
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.110571Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.110743Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Suspicion de prompt injection."}, "note": "injection_heuristic_triggered"}}
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.111220Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.111262Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.111507Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5b513e9c-ee82-4233-8fb1-5eac7e39e1ec", "ts": "2026-02-10T15:00:07.111563Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}

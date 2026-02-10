@@ -1,0 +1,7 @@
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:17:49.370024Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:19:02.382493Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "procédure pour obtenir une attestation de scolarité PDF", "rationale": "Email demande concernant la procédure d'obtention d'une attestation de scolarité."}}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:19:02.383762Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:19:05.451777Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "b5b4113329ba", "latency_ms": 3067, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:19:05.452489Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:19:05.452953Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "2872e82b-0988-4516-aab3-802ce9c8b99e", "ts": "2026-02-08T17:22:11.476996Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

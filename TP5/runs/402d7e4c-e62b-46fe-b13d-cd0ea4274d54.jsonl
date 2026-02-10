@@ -1,0 +1,7 @@
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:30:42.723611Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:31:50.595635Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:31:50.596975Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:31:53.113421Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6fa6011f8368", "latency_ms": 2516, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:31:53.114121Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:31:53.114553Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "402d7e4c-e62b-46fe-b13d-cd0ea4274d54", "ts": "2026-02-08T17:34:43.248070Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}

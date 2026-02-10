@@ -1,0 +1,20 @@
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:19:13.135902Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:23.916944Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:23.917909Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.076949Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6fa6011f8368", "latency_ms": 158, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.077900Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.078541Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.078634Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.079021Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.079084Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:20:24.079548Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.194187Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "règles validation UE règlement scolarité", "q2": "obtention attestation de scolarite format pdf imtbs-tsp.eu"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.194995Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.252594Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "cb9eb2e35d39", "latency_ms": 57, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.253513Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.254131Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.254217Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.254682Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.254752Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.255318Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "b2b8163b-107c-49d1-988e-05da73948999", "ts": "2026-02-10T15:21:07.255424Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

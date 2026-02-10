@@ -1,0 +1,20 @@
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:28:02.799826Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E06"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.704332Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "stp rules", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.707060Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.794982Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "5fa7c013c434", "latency_ms": 87, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.796241Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.797084Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.797201Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.797825Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.797920Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:29:14.798676Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.821670Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "stp rules", "q2": "Imtbs-tsp.eu stp file"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.822778Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.910660Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "d03f157d1091", "latency_ms": 87, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.911979Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.912868Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.913002Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.913690Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.913796Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.914609Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "7be391a4-52be-482d-ab3e-40e00b292d36", "ts": "2026-02-10T15:30:00.914723Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

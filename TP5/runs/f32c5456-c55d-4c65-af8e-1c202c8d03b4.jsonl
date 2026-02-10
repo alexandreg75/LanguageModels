@@ -1,0 +1,6 @@
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:32:02.327042Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:33:10.572871Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "liste des étudiants + leurs notes", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:33:10.574896Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:33:10.575090Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:33:10.575974Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "f32c5456-c55d-4c65-af8e-1c202c8d03b4", "ts": "2026-02-10T13:33:10.576193Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

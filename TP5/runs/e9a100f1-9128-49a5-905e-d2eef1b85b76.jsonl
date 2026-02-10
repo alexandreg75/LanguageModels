@@ -1,0 +1,20 @@
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:24:40.029272Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.601641Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.602699Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.644554Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6fa6011f8368", "latency_ms": 41, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.645801Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.646471Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.646589Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.647052Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.647147Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:25:45.647751Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.364106Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "règles validation UE règlement scolarité", "q2": "AI Study Companion regulations"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.364934Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.405524Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "7edc0ddd4746", "latency_ms": 40, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.406159Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.406600Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.406658Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.406966Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.407009Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.407381Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "e9a100f1-9128-49a5-905e-d2eef1b85b76", "ts": "2026-02-10T15:26:18.407438Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

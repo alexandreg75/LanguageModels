@@ -1,0 +1,2 @@
+{"run_id": "2c1cbf52-14cf-429f-be27-baae2cd8b9d4", "ts": "2026-02-08T15:04:49.485481Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "2c1cbf52-14cf-429f-be27-baae2cd8b9d4", "ts": "2026-02-08T15:06:00.242091Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}

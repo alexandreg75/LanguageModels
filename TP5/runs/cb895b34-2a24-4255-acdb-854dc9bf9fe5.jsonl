@@ -1,0 +1,20 @@
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:35:22.852952Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.369240Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.370700Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.429965Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6fa6011f8368", "latency_ms": 59, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.430872Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.431439Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.431521Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.431974Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.432039Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:36:42.432572Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.322401Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "règles validation UE règlement scolarité", "q2": "procedure d'equivalence validation contrat formation"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.323168Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.382204Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e13e99190af6", "latency_ms": 58, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.383139Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.383762Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.383849Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.384290Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.384357Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.384940Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "cb895b34-2a24-4255-acdb-854dc9bf9fe5", "ts": "2026-02-10T15:37:20.385030Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

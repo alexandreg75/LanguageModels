@@ -1,0 +1,20 @@
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:21:07.256579Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E02"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.277607Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "règles validation UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.278656Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.323583Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "6fa6011f8368", "latency_ms": 44, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.324241Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.324681Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.324740Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.325046Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.325089Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:22:36.325448Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.481912Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "règles validation UE règlement scolarité", "q2": "UE validation rules - official guidelines"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.482706Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.539997Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "5468b7cfb134", "latency_ms": 57, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.540891Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.541474Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.541565Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.542024Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.542092Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.542625Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "3fb973d9-10ec-492c-8df5-8ff1f2368064", "ts": "2026-02-10T15:23:14.542704Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

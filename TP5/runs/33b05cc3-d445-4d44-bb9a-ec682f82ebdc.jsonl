@@ -1,0 +1,20 @@
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:30:00.916267Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.007171Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "UE règlement scolarité", "rationale": "Email administratif nécessitant des informations fiables."}}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.008675Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.066527Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "1d364764ad1d", "latency_ms": 57, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.067399Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.068009Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.068090Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.068513Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.068584Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1, "max_retrieval_attempts": 2}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:31:53.069103Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.119476Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q1": "UE règlement scolarité", "q2": "Alertes sécurité - Changement mot de passe requis"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.120237Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.177503Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "2c4e9d4ad297", "latency_ms": 57, "status": "error", "error": "model \"nomic-embed-text\" not found, try pulling it first (status code: 404)"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.178382Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 0}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.178980Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.179063Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.179486Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.179560Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2, "max_retrieval_attempts": 2}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.180085Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "33b05cc3-d445-4d44-bb9a-ec682f82ebdc", "ts": "2026-02-10T15:32:35.180155Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
